@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOIZ.BG - Видеопоздрави от известни личности</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\velis\Desktop\voizbg\favicon.png">
+
+    <style>
+
+#flag {
+    border-radius: 50%;
+width: 27px;
+height: 27px;
+margin: 2px;
+margin-top: 12px;
+margin-left: 5px;}
+
+
+.enterbuttons {
+    
+  background-color: white; 
+  color: #464646;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Corsa-Grotesk", sans-serif;
+  border-radius: 3px;
+  border: #296fb4;
+  margin-top:7px;
+  margin-bottom: 7px;
+
+
+
+}
+
+.enterbuttons:hover{
+
+    background-color: #296fb4 ;
+   
+    color: white;
+
+   
+    
+}
+#search{ margin: 4px 2px;
+    padding: 10px 32px;
+    display: inline-block;
+    border: #296fb4;
+    margin-top:7px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    margin-left: 620px;
+}
+#logo2 {text-align: left;
+margin-left: 320px}
+
+.header {
+          background:#296fb4;	; /* green background */
+          color: white; /* white text color */
+          position: fixed;
+          height: 50px;
+          width: 100%;
+          top: 0px;
+          display: flex;
+          font-family: "Corsa-Grotesk", sans-serif;
+          font-weight: bold;
+        }
+        
+        #pozdrav{    
+        margin-top: 50px;
+        text-align: center;
+        color:  #296fb4;;
+        
+        font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px ;
+    font-weight: bold;
+    font-family: "Corsa-Grotesk", sans-serif;
+    }
+        
+        
+        
+        .footer {
+          padding: 20px; /* Some padding */
+          text-align: center; /* Center text*/
+          background: #296fb4 ; /* Blue background */
+        
+            visibility: visible;
+
+        }
+
+        #footerlink{
+            font-family: "Corsa-Grotesk", sans-serif;
+            color: white;
+            
+        }
+        
+
+         a { text-decoration: none; }
+        
+        /* Ensure proper sizing */
+        * {
+          box-sizing: border-box;
+        }
+       
+
+
+/* Column container */
+.row {  
+  display: flex;
+  
+
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 25%;
+  background-color:#e2f0f9d1;
+  padding: 20px;
+  text-align: right;
+
+}
+
+/* Main column */
+.main {   
+  flex: 75%;
+  background-color: #e2f0f9d1; 
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+        .linkbuttons{
+            border-radius: 30px;
+            text-align: center;
+
+            background-color: #296fb4; /* blue */
+            font-family: "Corsa-Grotesk", sans-serif;
+  border: none;
+  color: white;
+  padding: 15px;
+  width: 180px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+        }
+
+        .linkbuttons:hover{
+            background-color:#df4c73;
+        }
+        #button12:hover{
+            background-color:#df4c73;
+        }
+        #button1{
+           
+            background-color:#df4c73;
+            font-family: "Corsa-Grotesk", sans-serif;
+        }
+
+        #button12{
+            background-color: #b1dde4;
+            font-family: "Corsa-Grotesk", sans-serif;
+        }
+        #line{
+            width: 180px;
+            height: 1px;
+            text-align: right;
+            background-color:rgb(51, 102, 204) ;
+            display: inline-block;
+
+
+
+        }
+        #pre{text-align: right;
+        font-family: "Corsa-Grotesk", sans-serif;
+        margin-top: 20px;
+    
+        
+      
+   }
+
+
+
+
+
+
+        
+ 
+        #partners{
+            display: inline-block;
+
+    
+    margin: 10px;
+        }
+        #partner title{
+            height: 100px;
+    overflow: hidden;
+    margin-top: -10px;
+    padding: 20px 10px 5px;
+    text-align: left;
+    color: #464646;
+    font-size: 15px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    font-family: "Corsa-Grotesk";
+        }
+
+
+        h2{
+            font-size: 16px;
+            color: rgb(41,111,180);
+            font-family: "Corsa-Grotesk", sans-serif;
+            margin-left: 10px;
+          
+            
+        }
+
+        span{
+            margin-top: 5px;
+            text-align: left;
+    color: #464646;
+    font-size: 15px;
+    font-family: "Corsa-Grotesk", sans-serif;
+    margin-left: 10px;
+    
+
+
+ 
+
+        }
+
+        .allgallery{
+            width: 1300px;
+            margin-top: 50px;
+
+        }
+   
+
+        .gallery{
+            margin-top: 50px;
+            
+    
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    float: left;
+    
+        }
+
+        .linkimage{
+            margin-top: 50px;
+        }
+
+        .gallery:hover{
+           
+            transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+          
+        }
+
+
+        .gallery:hover .price {
+        
+           visibility: visible;
+           margin-bottom: 100px;
+         
+           
+         
+       }
+
+
+        .desc{
+            font-size: 16px;
+            border-radius: 10px;
+            padding-bottom: 30px;
+            font-family: "Corsa-Grotesk", sans-serif;
+
+        }
+
+        .divingallery{
+            border-radius: 10px;
+            
+            
+        }
+
+
+      
+     
+
+        
+
+        .price{
+            background-color: grey;
+            opacity: 0.6;
+            color: white;
+            width: 45px;
+            height: 25px;
+            border-radius: 5px;
+            text-align: right;
+            visibility: hidden;
+            position: absolute;
+            bottom: 8px;
+  right: 16px;
+        
+        }
+
+     
+   
+
+/* Slideshow container */
+.slideshow-container {
+ 
+ 
+  text-align: center;
+
+  
+
+
+
+}
+
+/* Hide the images by default */
+.mySlides {
+
+
+ 
+    height: 350px;
+   
+
+   
+
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.carouseldiv{
+    display: flex;
+    text-align: center;
+    
+
+}
+
+
+
+
+.imgincarousel{
+    margin: 10px;
+    
+    
+}
+
+.reklama{
+
+    text-align: center;
+    margin-left: 270px;
+}
+
+.linkimage{
+
+    margin-top: 50px;
+}
+
+
+        </style>
+
+</head>
+
+
+
+<body>
+    
+
+
+    <div class="header">
+      <img  id= "logo2" src="C:\Users\velis\Desktop\voizbg\logo2.png">
+
+      <div>
+        <input id="search" type="text" value="Търси по име">
+
+      </div>
+ 
+ <button class="enterbuttons">Вход</button>
+ <button class="enterbuttons">Регистрация</button>
+
+ <img src="C:\Users\velis\Desktop\voizbg\flag_bg.png" id="flag" ></a>
+ <img src="C:\Users\velis\Desktop\voizbg\flag_en.png" id="flag" ></a>
+
+      </div>
+
+    <h1 id="pozdrav">Поръчай видео поздрав за приятели!</h1>
+
+
+
+
+    <div class="row">
+       
+
+
+        <div class="side">
+  
+    
+    
+    <button id="button1" class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Актьори</button>
+    <br>
+    <button class="linkbuttons">Музиканти</button>
+    <br>
+    <button class="linkbuttons">Видео поздрави</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button class="linkbuttons">Най-търсени</button>
+    <br>
+    <button id="button12" class="linkbuttons">Видео с кауза</button>
+    <br>
+    <br>
+    <div id="line"></div>
+    <br>
+    <br>
+    <br>
+    <button class="linkbuttons">Бизнес услуги</button>
+    <br>
+
+    <div id="linkbuttons">   
+        <p class="reklama">Поръчай реклама за 
+
+        </p>
+       <p class="reklama">      своя бизнес!</p>
+      </div>
+ 
+   
+    <br>
+
+</div>
+
+
+
+<div class="main">
+   
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+<div class="carouseldiv">
+    <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel1.png" width="200px" height="300px"> </a>
+    <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel2.png" width="200px" height="300px"> </a>
+    <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel3.png" width="200px" height="300px"> </a>
+    <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel4.png" width="200px" height="300px"> </a>
+    <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel5.png" width="200px" height="300px"> </a>
+</div>
+
+</div>
+
+
+<div class="mySlides fade">
+    <div class="carouseldiv">
+        <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel6.png" width="200px" height="300px"> </a>
+        <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel7.png" width="200px" height="300px"> </a>
+        <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel8.png" width="200px" height="300px"> </a>
+        <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel9.png" width="200px" height="300px"> </a>
+        <a class="imgincarousel" href="#"> <img  src="C:\Users\velis\Desktop\voizbg\img_carousel2.png" width="200px" height="300px"> </a>
+    </div>
+    
+
+
+
+</div>
+          
+
+  
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+      <script>
+    
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 sec
+        }
+        </script>
+        
+    </div>
+
+
+
+
+
+    
+<div class="allgallery">
+
+
+    <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+       <div class="containergallery" width="200" height="300" >
+        <img class="divingallery" src="andrea1.jpg" alt="Andrea"  width="200" height="300">
+
+      <p class="price">200лв.</p>
+       
+       </div>
+    </a>
+  
+        <div class="desc">
+            <h2>Андреа </h2>
+            <span>певица</span>
+        </div>
+   
+
+      </div>
+
+
+
+
+
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                         <img class="divingallery" src="balan1.jpg" alt="Balan"  width="200" height="300">
+         <p class="price">250лв.</p>
+       
+        </div>
+    </a>
+           
+        <div class="desc">
+            <h2>BALLAN</h2>
+            <span>инфлуенсър</span>
+        </div>
+
+      </div>
+    
+
+      
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                        <img class="divingallery" src="kateto.png" alt="Kateto"  width="200" height="300">
+        <p class="price">200лв.</p>
+       
+       </div>
+    </a>
+  
+        <div class="desc">
+            <h2>Катето Евро </h2>
+            <span>актриса</span>
+        </div>
+  
+
+      </div>
+
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                         <img class="divingallery" src="ivo.png" alt="Иво"  width="200" height="300">
+         <p class="price">200лв.</p>
+       
+        </div>
+    </a>
+        <div class="desc">
+            <h2>Ivo Dimchev</h2>
+            <span>артист</span>
+        </div>
+ 
+      </div>
+    
+
+      
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                         <img class="divingallery" src="lidia.png" alt="Lidia"  width="200" height="300">
+         <p class="price">200лв.</p>
+       
+        </div>
+    </a>
+        <div class="desc">
+            <h2>LIDIA/Лидия</h2>
+            <span>певица</span>
+        </div>
+ 
+      </div>
+
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                         <img class="divingallery" src="100kila.png" alt="100кила"  width="200" height="300">
+         <p class="price">200лв.</p>
+       
+        </div>
+    </a>
+        <div class="desc">
+            <h2>Явор Янакиев - 100 КИЛА</h2>
+            <span>рап изпълнител</span>
+        </div>
+ 
+      </div>
+
+
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                         <img class="divingallery" src="kami.png" alt="kami"  width="200" height="300">
+         <p class="price">200лв.</p>
+       
+        </div>
+    </a>
+        <div class="desc">
+            <h2>Камелия Тодорова</h2>
+            <span>певица</span>
+        </div>
+ 
+      </div>
+
+
+      <div class="gallery" width="200" height="390">
+        <a class="linkimage" href="#">
+            <div class="containergallery" width="200" height="300" >
+                         <img class="divingallery" src="nencho.png" alt="nencho"  width="200" height="300">
+         <p class="price">200лв.</p>
+       
+        </div>
+    </a>
+        <div class="desc">
+            <h2>Ненчо Балабанов</h2>
+            <span>артист</span>
+        </div>
+ 
+      </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+      <div class="footer">
+        <a class="footerlink" href="#"><img src="footer_links.png"></a>
+        <br>
+       <a class="footerlink" href="#">БЛОГ</a>
+       <a class="footerlink" href="#">ПОМОЩ</a>
+       <a class="footerlink" href="#">ОБЩИ УСЛОВИЯ</a>
+       <a class="footerlink" href="#">ПОВЕРИТЕЛНОСТ</a>
+       <a class="footerlink" href="#">БИСКВИТКИ</a>
+       <a class="footerlink" href="#">КОНТАКТИ</a>
+      </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
